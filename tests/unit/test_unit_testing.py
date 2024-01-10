@@ -91,7 +91,7 @@ def test_remove_stopwords_invalid_input():
 
 @pytest.mark.parametrize("text, expected", [
     (["running", "leaves", "happily"], ["run", "leav", "happili"]),
-    (["better", "worst", "flying"], ["better", "worst", "fly"]),
+    (["better", "worst", "flying"], ["better", "worst", "fli"]),
     
 ])
 def test_apply_stemming(text, expected):    
